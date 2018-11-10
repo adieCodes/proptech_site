@@ -1,0 +1,100 @@
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'PT Serif', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h1,
+.header__subhead{
+    text-align: center;
+}
+
+header p,
+section {
+    padding: 0 0.5rem;
+}
+
+header img {
+    width: 100%;
+}
+
+.offering__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.offering__option {
+    width: 300px;
+    margin: 0.5rem;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.offering__option h1 {
+    font-size: 1.25rem;
+}
+
+.cta {
+    width: 5rem;
+    display: block;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+}
+
+.cta__offer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+blockquote {
+    position: relative;
+}
+
+blockquote:before {
+    position: absolute;
+    margin-left: -0.5rem;
+    content: open-quote;
+}
+
+blockquote:after {
+    content: close-quote;
+}
+
+.testimony__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimony__container {
+    margin: auto;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.testimony__quote {
+    min-width: 200px;
+    max-width: 350px;
+}
+
+footer {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
