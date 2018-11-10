@@ -12,7 +12,17 @@
         <h1>proptech</h1>
         <!--TODO: Make responsive image-->
         <h2>We remove the headache from managing your property portfolio</h2>
-        <image src="images/hero.jpg"></image>
+        <img srcset="images/hero_320.jpg 318w,
+             images/hero_720.jpg 718w,
+             images/hero_1080.jpg 1078w,
+             images/hero_2000.jpg 1999w,
+             images/hero_4000.jpg 3999w"
+             sizes="(max-width: 320px) 300px,
+            (max-width: 720px) 700px,
+            (max-width: 1080px) 1060px,
+            (max-width: 2000px) 1980px,
+            3980px"
+             src="images/hero_1080.jpg" alt="Man at a laptop scratching his head">
     </header>
     <section class="offering">
         <div class="offering__implementation">
