@@ -7,9 +7,13 @@
     --dark-faded-color: #707C80;
     --light-color: #fff;
     --bright-color: #18F720;
+    --offer-1-color: #E8D914;
+    --offer-2-color: #E98A15;
+    --offer-3-color: #E84914;
 }
 
-body {
+body,
+.pricing__header {
     color: var(--dark-color);
     font-size: 16px;
     margin: 0;
@@ -21,7 +25,8 @@ h2,
 h3,
 h4,
 h5,
-.cta {
+.cta,
+.offer-details table tbody tr.pricing{
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
@@ -37,6 +42,14 @@ h1,
 
 .secondary-font-color {
     color: var(--secondary-color);
+}
+
+.shadow {
+    box-shadow: 0.1rem 0.1rem 0.5rem 0 var(--dark-faded-color);
+}
+
+header h1 a {
+    text-decoration: none;
 }
 
 header p,
@@ -166,9 +179,71 @@ cite {
     -webkit-transform: translate(-30px, -2px);
 }
 
+.offer-details__hero {
+    padding: 4rem 0 6rem 0;
+    background-color: var(--secondary-color);
+}
+
+.offer-details {
+    margin-top: -4rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.offer-details__container {
+    width: 300px;
+    margin: 1rem auto;
+    background-color: var(--light-color);
+}
+
+.offer-details__header {
+    padding: 1.5rem;
+}
+
+.offer-details__spec {
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+.offer-details__spec p {
+    color: var(--dark-faded-color);
+}
+
+.offer-details__header,
+.offer-details__book {
+    color: var(--light-color);
+}
+
+.offer-details__container--quick .offer-details__header,
+.offer-details__container--quick .offer-details__book
+{
+    background-color: var(--offer-1-color);
+}
+
+.offer-details__container--turbo .offer-details__header,
+.offer-details__container--turbo .offer-details__book
+{
+    background-color: var(--offer-2-color);
+}
+
+.offer-details__container--supercharged .offer-details__header,
+.offer-details__container--supercharged .offer-details__book
+{
+    background-color: var(--offer-3-color);
+}
+
+.offer-details__book {
+    text-decoration: none;
+    display: block;
+    width: 5rem;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
 footer {
     margin-top: 0.5rem;
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
     background-color: var(--dark-faded-color);
     color: var(--light-color);
 }
